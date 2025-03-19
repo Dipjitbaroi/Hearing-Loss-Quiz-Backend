@@ -1,0 +1,26 @@
+services:
+    redis:
+        container_name: redis
+        image: redis:7.4.1-alpine
+        restart: always
+        volumes:
+            - redis_vol:/data
+        environment:
+            - REDIS_PASSWORD=1234567
+        ports:
+            - 6379:6379
+
+    nginx_proxy:
+        container_name: nginx_proxy
+        image: "jc21/nginx-proxy-manager:latest"
+        restart: unless-stopped
+        ports:
+            - "80:80"
+            - "81:81"
+            - "443:443"
+        volumes:
+            - ./data:/data
+            - ./letsencrypt:/etc/letsencrypt
+
+volumes:
+  redis_vol:

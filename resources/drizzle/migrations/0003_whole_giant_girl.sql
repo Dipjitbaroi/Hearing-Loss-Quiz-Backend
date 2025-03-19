@@ -1,0 +1,1 @@
+ALTER TABLE `user_submissions` ADD `additional` json NOT NULL;

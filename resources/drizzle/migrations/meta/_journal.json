@@ -1,0 +1,34 @@
+{
+  "version": "5",
+  "dialect": "mysql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1732552429178,
+      "tag": "0000_bitter_the_professor",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1732627157034,
+      "tag": "0001_thin_ravenous",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1732629036932,
+      "tag": "0002_wandering_sentinels",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "5",
+      "when": 1732630282480,
+      "tag": "0003_whole_giant_girl",
+      "breakpoints": true
+    }
+  ]
+}
